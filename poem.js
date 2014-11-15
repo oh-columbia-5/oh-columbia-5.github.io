@@ -6,6 +6,10 @@ function nextLine(line) {
 "<p onClick=nextLine(4)>Now they all send <em>me</em> changes, d'oh!</p>",
 "<p onClick=nextLine(5)>Said the maintainer, 'Welcome to the club!'</p>");
 
+	if(line==5){
+		line=0;
+	}
+
 	document.getElementById("line").innerHTML=poem[line];
 }
 
